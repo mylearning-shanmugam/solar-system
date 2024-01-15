@@ -100,6 +100,7 @@ jobs:
           - name: Docker build for testing
             uses: docker/build-push-action@v5
             with:
+              #docker file path
               context: .
               push: false
               tags: ${{secrets.DOCKER_USERNAME}}/solar-system:${{github.sha}}
