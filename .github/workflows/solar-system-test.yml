@@ -30,7 +30,8 @@ jobs:
             name: Mocha-Test-Result
             path: test-results.xml
             retention-days: 1
-      code-coverage:
+      
+    code-coverage:
         name: Code Coverage
         runs-on: ubuntu-latest
         steps:
