@@ -1,6 +1,7 @@
 name: Solar System
 on: 
   workflow_dispatch:
+  push:
 jobs:
     unit-testing:
       name: unit testing
