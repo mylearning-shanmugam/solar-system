@@ -1,4 +1,4 @@
-name: Solar Syetsm
+name: Solar System
 on: 
   workflow_dispatch:
 jobs:
