@@ -25,9 +25,13 @@ jobs:
           run: npm test
         
         - name: Archive Test Result
+          #unique name
+          id: node-js-unit-testing-step
           uses: actions/upload-artifact@v3
           with:
             name: Mocha-Test-Result
+            # proceed the step execution for the previous step outcome is either failure or success
+            if: steps.node-js-unit-testing-step.outcome == 'failure'  || steps.node-js-unit-testing-step.outcome == 'success'
             path: test-results.xml
             retention-days: 1
       
