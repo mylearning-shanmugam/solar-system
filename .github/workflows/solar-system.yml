@@ -8,10 +8,10 @@ on:
   #      - 'feature/*'
   
 jobs:
-     unit-testing:
-        name: unit testing
-        runs-on: ubuntu-latest
-        steps:
+    unit-testing:
+      name: unit testing
+      runs-on: ubuntu-latest
+      steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
         
